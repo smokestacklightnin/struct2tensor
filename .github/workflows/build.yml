@@ -26,17 +26,19 @@ jobs:
     - name: Install python dependencies
       run: pip install build twine
 
-    - name: Build sdist and wheel
+    - name: Run Bazel Build
       run: |
-        python -m build
+        bazel build ...
 
     - name: List and check
       run: |
+        # Change dist to the correct directory
         ls -lh dist/
         twine check dist/*
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
+        # Change dist to the correct directory
         path: ./dist/*
         name: wheels${{ matrix.python-version }}-${{ matrix.os }}
