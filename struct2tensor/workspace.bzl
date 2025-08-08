@@ -78,7 +78,7 @@ cc_library(
         urls = ["https://github.com/apache/arrow/archive/%s.zip" % ARROW_COMMIT],
     )
 
-    _TFMD_COMMIT_HASH = "404805761e614561cceedc429e67c357c62be26d"  # 1.17.1
+    _TFMD_COMMIT_HASH = "52cd2c09cecbbd3f893f8b871945c16ab280e073"  # 1.17.2
     http_archive(
         name = "com_github_tensorflow_metadata",
         sha256 = "1b72e0e5085812cd9b19e004a381b544542f9545a081f0f738c5ed6b8bb886a2",
