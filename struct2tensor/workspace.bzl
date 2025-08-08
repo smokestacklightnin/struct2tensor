@@ -81,7 +81,7 @@ cc_library(
     _TFMD_COMMIT_HASH = "52cd2c09cecbbd3f893f8b871945c16ab280e073"  # 1.17.2
     http_archive(
         name = "com_github_tensorflow_metadata",
-        sha256 = "1b72e0e5085812cd9b19e004a381b544542f9545a081f0f738c5ed6b8bb886a2",
+        sha256 = "f47caa035480240cc3e3a95472be62a38b5d6e95e1f73f18960b974f08ad2f78",
         strip_prefix = "metadata-%s" % _TFMD_COMMIT_HASH,
         urls = [
             "https://github.com/tensorflow/metadata/archive/%s.zip" % _TFMD_COMMIT_HASH,
